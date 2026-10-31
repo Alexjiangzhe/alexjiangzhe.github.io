@@ -1,0 +1,89 @@
+{
+  "profile": {
+    "name": "Zhe Jiang (Alex)",
+    "domain": "alexjiangzhe.com",
+    "orcid": "https://orcid.org/0009-0003-1137-6310",
+    "email": "alexjiangzhe@outlook.com",
+    "university": "Eötvös Loránd University (ELTE)",
+    "education": "BA in Psychology",
+    "educationPeriod": "September 2025 – present",
+    "intro": "I’m Alex, a psychology undergraduate at ELTE. I study how the brain represents information and how those representations change with cognitive state.",
+    "about": "My current work brings computational analysis to fMRI and EEG research. I contribute to collaborative projects through analysis implementation, quality checks and visual reporting, alongside research team coordination."
+  },
+  "interests": [
+    {"title":"Neural representation", "description":"How is information organised in the geometry of brain activity?", "project":"cognitive-space"},
+    {"title":"Cognitive state", "description":"How does the way we attend to information shape its neural representation?", "project":"information-states"},
+    {"title":"Computational methods", "description":"How can careful modelling and quality control make neural data interpretable?", "project":"eeg"}
+  ],
+  "projects": [
+    {
+      "id":"cognitive-space",
+      "number":"01",
+      "title":"The geometry of cognition",
+      "shortTitle":"Neural representational geometry",
+      "area":"REPRESENTATION · fMRI",
+      "summary":"Relating cognitive states through the structure of neural activity patterns.",
+      "question":"How can the relationships between neural activity patterns help us describe cognitive states?",
+      "approach":"This collaborative fMRI project combines low-dimensional representations with comparisons in the original pattern space. Representational similarity analysis and pattern component modelling provide complementary ways to examine how candidate descriptions account for the data.",
+      "contribution":"I work on the analysis implementation, sensitivity checks and visual reporting of representational geometry, including Isomap, RSA, PCM and temporal analyses. The scientific interpretation and manuscript are collaborative work.",
+      "methods":["fMRI","Isomap","RSA","PCM"],
+      "status":"Ongoing collaborative research",
+      "release":"High-level overview. Manuscript details and empirical results are not included in this prototype.",
+      "image":"geometry.svg",
+      "imageAlt":"Conceptual coloured point clouds representing a neural pattern space; synthetic coordinates.",
+      "flow":["Activity patterns","Representational geometry","Compare candidate models"]
+    },
+    {
+      "id":"information-states",
+      "number":"02",
+      "title":"How we receive information",
+      "shortTitle":"Cognitive state & brain dynamics",
+      "area":"STATE · BRAIN NETWORKS",
+      "summary":"Examining neural activity across different ways of receiving sensory information.",
+      "question":"How do different ways of receiving information relate to brain activity and its changes over time?",
+      "approach":"The project examines visual and auditory information processing using fMRI. The local working materials combine activity-pattern comparisons, low-dimensional representations, state dynamics and connectivity analyses.",
+      "contribution":"I contribute to the computational analysis workflow, checks across analysis branches and visual research reporting. I also help coordinate the research team. Specific project roles and author lists will be reviewed before publication on this site.",
+      "methods":["fMRI","HMM","MVPA","Connectivity"],
+      "status":"Ongoing collaborative research",
+      "release":"Project overview only. Internal condition definitions, results and manuscript figures are withheld.",
+      "image":"states.svg",
+      "imageAlt":"Conceptual state trajectories and network connections, with no empirical measurements.",
+      "flow":["Sensory information","Brain activity over time","State & network descriptions"]
+    },
+    {
+      "id":"brain-inference",
+      "number":"03",
+      "title":"Features, perception & inference",
+      "shortTitle":"Stimulus features & brain inference",
+      "area":"PERCEPTION · MODELLING",
+      "summary":"Connecting measurable properties of stimuli with models of brain activity.",
+      "question":"How can measurable stimulus features inform models of neural responses during perception?",
+      "approach":"The local project includes quantitative image-feature extraction and feature-based fMRI modelling. The workflow links feature definitions, scaling and model design to first- and second-level analyses.",
+      "contribution":"I work with feature extraction and fMRI analysis pipelines, including implementation checks and computational workflow documentation. This is a contribution to a collaborative project; this page does not claim sole ownership of the methods.",
+      "methods":["Image features","GLM","Python","SPM / MATLAB"],
+      "status":"Ongoing collaborative research",
+      "release":"Methods overview only. Stimulus sets, feature tables and effect estimates are not distributed.",
+      "image":"features.svg",
+      "imageAlt":"An abstract stimulus marker over a feature matrix; illustrative values only.",
+      "flow":["Stimulus properties","Feature-based models","Neural response estimates"]
+    },
+    {
+      "id":"eeg",
+      "number":"04",
+      "title":"Making EEG analysis inspectable",
+      "shortTitle":"EEG preprocessing & quality control",
+      "area":"EEG · RESEARCH PRACTICE",
+      "summary":"Building an inspectable resting-state EEG workflow with human review.",
+      "question":"How can an EEG preprocessing workflow make each quality-control decision clear and reviewable?",
+      "approach":"Within the ELTE Music and Language Development Research Group, the current work focuses on resting-state EEG preprocessing in EEGLAB. It includes filtering, ICA, channel and epoch review, and documented quality-control decisions.",
+      "contribution":"I work on the practical preprocessing pipeline and its quality-control reports. Automated flags support manual inspection; they do not replace the reviewer’s decision. Downstream EEG findings are not presented here.",
+      "methods":["EEG","EEGLAB","ICA","Manual QC"],
+      "status":"Ongoing group research · preprocessing",
+      "release":"Workflow overview only. Participant recordings, identifiers, QC records and unpublished study details are excluded.",
+      "image":"eeg.svg",
+      "imageAlt":"Synthetic EEG-like traces with a highlighted review window, not participant data.",
+      "flow":["Recorded signal","Preprocessing & human review","Documented analysis input"]
+    }
+  ],
+  "publications": []
+}

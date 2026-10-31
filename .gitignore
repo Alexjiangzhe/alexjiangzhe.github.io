@@ -1,0 +1,21 @@
+# Public repository allowlist. Everything else stays on this Mac.
+/*
+!/.gitignore
+!/README.md
+!/package.json
+!/server.mjs
+!/public/
+!/tools/
+/tools/*
+!/tools/generate_illustrations.py
+!/tools/validate-site.mjs
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/pages.yml
+/public/.DS_Store
+/public/**/.DS_Store
+node_modules/
+.env*
+*.log
