@@ -357,3 +357,32 @@ body[data-page=research] .page-intro h1 { max-width: none; }
   .hero-headline h1 em { font-size: .9em; letter-spacing: -.7px; }
   .hero-visual img { max-width: 400px; }
 }
+
+/* Explain the scientific use of methods, while keeping the editorial rhythm. */
+.method-explanations { margin: 28px 0 0; }
+.method-explanations > div { border-top: 1px solid var(--line); padding-block: 18px; }
+.method-explanations dt { font-size: 18px; font-weight: 600; margin-bottom: 7px; }
+.method-explanations dd { margin: 0; font-size: 17px; line-height: 1.75; color: var(--soft); }
+.research-practice { padding-block: 40px 64px; border-top: 1px solid var(--line); }
+.research-practice h2 { font-size: 38px; margin-block: 16px 32px; }
+.practice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 56px; }
+.practice-grid article { padding-top: 22px; border-top: 1px solid var(--line); }
+.practice-grid h3 { font-size: 27px; margin-bottom: 14px; }
+.practice-grid p { font-size: 18px; line-height: 1.75; max-width: 53ch; }
+.practice-grid .practice-tools { font-size: 15px; color: var(--soft); margin-block: 16px; }
+.state-chart { padding: 24px; margin-top: 24px; background: #eee7db; border: 1px solid var(--line); }
+.state-axis, .state-summary { font-size: 15px !important; line-height: 1.7; }
+.state-sequence { display: grid; grid-template-columns: repeat(24,1fr); gap: 3px; margin-block: 18px; }
+.state-bin { display: block; height: 64px; border-radius: 2px; }
+.state-A { background: #667e78; }.state-B { background: #a1734e; }.state-C { background: #8b7b94; }
+.state-legend { display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 14px; margin-block: 18px; }
+.state-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.state-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+@media(max-width:760px) {
+  .research-practice { padding-block: 32px 42px; }
+  .research-practice h2 { font-size: 30px; }
+  .practice-grid { grid-template-columns: 1fr; gap: 28px; }
+  .practice-grid h3 { font-size: 25px; }.practice-grid p { font-size: 17px; }
+  .method-explanations dt { font-size: 17px; }.method-explanations dd { font-size: 17px; }
+  .state-chart { padding: 18px; }.state-sequence { gap: 2px; }.state-bin { height: 48px; }
+}

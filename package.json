@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.3.0",
   "description": "Zhe Jiang (Alex): academic website about cognition, neural representation and research methods.",
-  "scripts": {"start": "node server.mjs", "check": "node --check public/app.js && node --check server.mjs && node tools/validate-site.mjs"},
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check public/app.js && node --check public/visualizations.js && node --check server.mjs && node tools/validate-site.mjs"
+  },
   "type": "module"
 }

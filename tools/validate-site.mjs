@@ -27,10 +27,12 @@ for (const file of files) {
 const data = JSON.parse(await readFile(path.join(root, 'data/content.json'), 'utf8'));
 if (new Set(data.projects.map(p => p.id)).size !== data.projects.length) throw new Error('Duplicate project id');
 for (const project of data.projects) {
-  for (const field of ['title', 'question', 'approach', 'contribution', 'status']) if (!project[field]) throw new Error(`Missing ${field} in ${project.id}`);
+  for (const field of ['title', 'question', 'motivation', 'approach', 'contribution', 'currentWork', 'status']) if (!project[field]) throw new Error(`Missing ${field} in ${project.id}`);
+  if (!project.methodDetails?.length || project.methodDetails.some(m => !m.name || !m.purpose)) throw new Error(`Missing method explanation: ${project.id}`);
   if (!files.includes(path.join(root, 'assets', project.image))) throw new Error(`Missing artwork: ${project.image}`);
 }
 for (const publication of data.publications) {
+  if (!['Published', 'Accepted', 'Preprint', 'Under review'].includes(publication.status) || !/^https:\/\//.test(publication.url)) throw new Error('Invalid publication status or public link');
   if (!publication.title || !publication.authors || !publication.status || !publication.url) throw new Error('Incomplete publication record');
 }
 for (const page of ['index.html', 'research.html', 'publications.html', 'cv.html', 'contact.html']) {

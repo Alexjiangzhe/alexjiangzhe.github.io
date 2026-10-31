@@ -7,6 +7,7 @@ Personal academic website about cognitive neuroscience and research practice. Th
 - `public/`: the complete static website; the only directory deployed to GitHub Pages.
 - `public/data/content.json`: profile, research questions, project contributions, methods and publication records.
 - `public/app.js`: page rendering and small explanatory interactions.
+- `public/visualizations.js`: educational state-sequence explorer using invented labels and time bins.
 - `public/styles.css`: shared typography, colours and responsive layouts.
 - `tools/generate_illustrations.py`: reproducible conceptual artwork using synthetic values only.
 - `tools/validate-site.mjs`: public-file, content and metadata checks.
@@ -39,3 +40,5 @@ Project pages describe ongoing collaborative work at a high level. Conceptual di
 The hero is an original AI-generated editorial collage. The scientific SVG artwork is generated locally; it contains no participant data. No external stock images, web fonts or analytics services are used.
 
 Private source notes, internal review reports, raw research data, unpublished manuscripts, participant records, credentials and local execution notes must remain outside the public repository. The root ignore rules intentionally allow only website source and publishing tools. The validator is an additional check, not a substitute for reviewing the staged changes.
+
+Publication entries in `data/content.json` use `title`, `authors` (display string), `status`, `url`, and optional `year` and `venue`. Only add records whose authorship and release status have been verified.
