@@ -386,3 +386,11 @@ body[data-page=research] .page-intro h1 { max-width: none; }
   .method-explanations dt { font-size: 17px; }.method-explanations dd { font-size: 17px; }
   .state-chart { padding: 18px; }.state-sequence { gap: 2px; }.state-bin { height: 48px; }
 }
+
+.work-hint { display: none; }
+.publication-list article { padding-block: 28px; border-top: 1px solid var(--line); }
+.publication-list h2 { font-size: 30px; margin-block: 14px; }
+@media(max-width:760px) {
+  .work-card { flex-basis: 88%; }
+  .work-hint { display: block; font-size: 14px; color: var(--soft); margin: 0 0 18px; }
+}
