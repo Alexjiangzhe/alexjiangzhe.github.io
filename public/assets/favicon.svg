@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="#f5f1e8"/><text x="32" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#30372f">Z</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f7f5f1"/>
+  <g fill="#5e3347">
+    <rect x="11" y="11" width="12" height="12" rx="2.2"/>
+    <rect x="26" y="11" width="12" height="12" rx="2.2" opacity=".32"/>
+    <rect x="41" y="11" width="12" height="12" rx="2.2" opacity=".18"/>
+    <rect x="11" y="26" width="12" height="12" rx="2.2" opacity=".32"/>
+    <rect x="26" y="26" width="12" height="12" rx="2.2"/>
+    <rect x="41" y="26" width="12" height="12" rx="2.2" opacity=".42"/>
+    <rect x="11" y="41" width="12" height="12" rx="2.2" opacity=".18"/>
+    <rect x="26" y="41" width="12" height="12" rx="2.2" opacity=".42"/>
+    <rect x="41" y="41" width="12" height="12" rx="2.2"/>
+  </g>
+</svg>

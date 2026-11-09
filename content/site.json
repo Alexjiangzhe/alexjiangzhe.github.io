@@ -1,0 +1,117 @@
+{
+  "name": "Zhe Jiang (Alex)",
+  "description": "Zhe Jiang (Alex), psychology undergraduate at ELTE, working on neural representation and cognitive states with fMRI and EEG.",
+  "about": {
+    "heading": "About",
+    "bio": [
+      "I’m Zhe Jiang (Alex), a psychology undergraduate at Eötvös Loránd University (ELTE). I’m interested in how the brain represents information, and how cognitive states shape the way that information is processed.",
+      "In collaborative fMRI projects, I build and check analysis pipelines, from representational similarity analysis and pattern component modelling to feature-based models of neural responses. At ELTE, I work on resting-state EEG preprocessing and quality control in the Music and Language Development Research Group.",
+      "I care about analyses that can be inspected: explicit models, traceable decisions and an honest account of what the data support."
+    ],
+    "education": [
+      { "what": "BA in Psychology, Eötvös Loránd University (ELTE)", "when": "2025 – present" }
+    ],
+    "cv": {
+      "file": "assets/cv/Zhe_Jiang_CV.pdf",
+      "label": "Curriculum vitae",
+      "note": "PDF"
+    },
+    "contact": {
+      "email": "alexjiangzhe@outlook.com",
+      "orcid": "https://orcid.org/0009-0003-1137-6310",
+      "github": "https://github.com/Alexjiangzhe",
+      "researchgate": "https://www.researchgate.net/profile/Jiang-Zhe-6"
+    }
+  },
+  "projects": [
+    {
+      "id": "cognitive-space",
+      "title": "The geometry of cognition",
+      "navTitle": "The geometry of cognition",
+      "subtitle": "Separating a shared cognitive state from the strategy used to reach it, through the structure of fMRI activity patterns.",
+      "tags": ["fMRI", "Representational geometry", "Isomap", "RSA", "PCM"],
+      "status": "Ongoing collaborative research",
+      "question": "How can we distinguish an overall cognitive state from the particular strategy used to reach it?",
+      "body": [
+        "Different strategies can share parts of the same cognitive processing. Comparing their neural activity patterns lets us ask which relationships reflect a shared state and which reflect strategy-specific structure.",
+        "Low-dimensional maps (Isomap) help explore these relationships. Representational similarity analysis (RSA) and pattern component modelling (PCM) then test them against explicit candidate models, with sensitivity checks for noise, sampling and temporal structure."
+      ],
+      "details": [
+        ["My role", "Implementing and checking representational analyses, comparing modelling choices, and preparing visual and statistical reports. Interpretation and manuscript development are collaborative."],
+        ["Methods", "fMRI · Isomap · RSA · PCM · sensitivity analyses"],
+        ["Setting", "Collaborative fMRI research"]
+      ],
+      "image": "assets/geometry.svg",
+      "imageAlt": "Conceptual coloured point clouds representing a neural pattern space.",
+      "caption": "Conceptual illustration · synthetic coordinates, not empirical data.",
+      "note": "Empirical results and manuscript figures remain private until publication."
+    },
+    {
+      "id": "information-states",
+      "title": "How we receive information",
+      "navTitle": "How we receive information",
+      "subtitle": "How the way we receive sensory information changes the use of shared neural systems.",
+      "tags": ["fMRI", "MVPA", "RSA", "HMM", "Connectivity"],
+      "status": "Ongoing collaborative research",
+      "question": "How does the way we receive sensory information change the use of shared neural systems?",
+      "body": [
+        "Two processing conditions may involve overlapping neural systems while differing in how those systems are used. This project separates questions about shared activity patterns from questions about how they unfold over time and interact across networks.",
+        "Visual and auditory fMRI workflows combine multivoxel pattern comparisons, representational relationships, hidden-state descriptions and connectivity modelling. Each offers a different perspective, and each has its inputs and assumptions checked separately."
+      ],
+      "details": [
+        ["My role", "Event and time-series alignment, computational workflows, checks across analysis branches and visual reporting; coordinating analysis tasks within the team."],
+        ["Methods", "fMRI · MVPA · RSA · hidden Markov models · connectivity modelling"],
+        ["Setting", "Collaborative fMRI research"]
+      ],
+      "image": "assets/states.svg",
+      "imageAlt": "Conceptual state trajectories and network connections.",
+      "caption": "Conceptual illustration · no empirical measurements.",
+      "note": "Internal conditions, analysis outputs and unpublished results remain private."
+    },
+    {
+      "id": "brain-inference",
+      "title": "Features, perception & inference",
+      "navTitle": "Features, perception & inference",
+      "subtitle": "Connecting measurable properties of images with models of brain activity during perception.",
+      "tags": ["fMRI", "Image features", "GLM", "SPM", "Python"],
+      "status": "Ongoing collaborative research",
+      "question": "How can measurable stimulus features inform models of neural responses during perception?",
+      "body": [
+        "Perceptual responses can depend on several properties of a stimulus at once. Describing properties such as colour, texture and edge structure makes those hypotheses explicit.",
+        "The workflow links quantitative image descriptors with feature-based general linear models in SPM. Feature definitions, scaling and model design all shape how the resulting response estimates can be interpreted."
+      ],
+      "details": [
+        ["My role", "Implementing and checking the fMRI modelling workflow, including comparisons between scripted and interactive SPM setups; feature preparation, documentation and coordination of analysis tasks."],
+        ["Methods", "Image descriptors · GLM · SPM / MATLAB · Python"],
+        ["Setting", "Collaborative fMRI research"]
+      ],
+      "image": "assets/features.svg",
+      "imageAlt": "An abstract stimulus marker over a feature matrix.",
+      "caption": "Conceptual illustration · illustrative values only.",
+      "note": "Stimulus materials, feature tables and neural effect estimates remain private."
+    },
+    {
+      "id": "eeg",
+      "title": "Making EEG analysis inspectable",
+      "navTitle": "Making EEG analysis inspectable",
+      "subtitle": "A resting-state EEG preprocessing workflow in which every quality-control decision is clear and reviewable.",
+      "tags": ["EEG", "EEGLAB", "ICA", "Quality control"],
+      "status": "Ongoing group research · preprocessing",
+      "question": "How can an EEG preprocessing workflow make each quality-control decision clear and reviewable?",
+      "body": [
+        "Preprocessing choices determine which signals enter later analyses. Making the evidence and the reviewer’s decisions visible helps collaborators understand how an analysis input was produced, and revisit a decision when needed.",
+        "The MATLAB / EEGLAB workflow covers signal preparation, ICA, and channel and epoch inspection. Automatic methods only flag candidates for review; a human reviewer makes and records the final decision."
+      ],
+      "details": [
+        ["My role", "Implementing preprocessing steps and quality-control reports; inspecting channels, independent components and epochs; maintaining documentation that links decisions to the workflow."],
+        ["Methods", "EEG · EEGLAB · ICA · manual quality control"],
+        ["Setting", "Music and Language Development Research Group, ELTE"]
+      ],
+      "image": "assets/eeg.svg",
+      "imageAlt": "Synthetic EEG-like traces with a highlighted review window.",
+      "caption": "Conceptual illustration · synthetic traces, not participant data.",
+      "note": "This page describes preprocessing work only; recordings and downstream findings are not reported."
+    }
+  ],
+  "publications": []
+}

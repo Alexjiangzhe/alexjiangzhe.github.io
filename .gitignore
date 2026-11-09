@@ -1,13 +1,17 @@
 # Public repository allowlist. Everything else stays on this Mac.
 /*
 !/.gitignore
+!/CNAME
 !/README.md
 !/package.json
 !/server.mjs
+!/content/
+/content/*
+!/content/site.json
 !/public/
 !/tools/
 /tools/*
-!/tools/generate_illustrations.py
+!/tools/build.mjs
 !/tools/validate-site.mjs
 !/.github/
 /.github/*

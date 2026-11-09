@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://alexjiangzhe.com/projects/eeg.html">
+<meta name="theme-color" content="#f7f5f1">
+<meta name="description" content="A resting-state EEG preprocessing workflow in which every quality-control decision is clear and reviewable.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Making EEG analysis inspectable — Zhe Jiang (Alex)">
+<meta property="og:description" content="A resting-state EEG preprocessing workflow in which every quality-control decision is clear and reviewable.">
+<meta property="og:url" content="https://alexjiangzhe.com/projects/eeg.html">
+<title>Making EEG analysis inspectable — Zhe Jiang (Alex)</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../site.css">
+<script src="../site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="site-name" href="../index.html"><svg class="brand-mark" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+  <g fill="currentColor">
+    <rect x="2" y="2" width="3.2" height="3.2" rx=".6"/>
+    <rect x="6.4" y="2" width="3.2" height="3.2" rx=".6" opacity=".32"/>
+    <rect x="10.8" y="2" width="3.2" height="3.2" rx=".6" opacity=".18"/>
+    <rect x="2" y="6.4" width="3.2" height="3.2" rx=".6" opacity=".32"/>
+    <rect x="6.4" y="6.4" width="3.2" height="3.2" rx=".6"/>
+    <rect x="10.8" y="6.4" width="3.2" height="3.2" rx=".6" opacity=".42"/>
+    <rect x="2" y="10.8" width="3.2" height="3.2" rx=".6" opacity=".18"/>
+    <rect x="6.4" y="10.8" width="3.2" height="3.2" rx=".6" opacity=".42"/>
+    <rect x="10.8" y="10.8" width="3.2" height="3.2" rx=".6"/>
+  </g>
+</svg><span>Zhe Jiang (Alex)</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="nav-group"><a class="nav-category" href="../index.html">About</a></div>
+    <div class="nav-group"><a class="nav-category" href="../research.html" aria-current="true">Research</a><ul class="subnav"><li><a href="../projects/cognitive-space.html">The geometry of cognition</a></li><li><a href="../projects/information-states.html">How we receive information</a></li><li><a href="../projects/brain-inference.html">Features, perception &amp; inference</a></li><li><a href="../projects/eeg.html" aria-current="page">Making EEG analysis inspectable</a></li></ul></div>
+    <div class="nav-group"><a class="nav-category" href="../publications.html">Publications</a></div>
+  </nav>
+</header>
+<main id="main" class="main">
+<article class="project-content">
+<a class="back-link" href="../research.html">← Research</a>
+<header class="project-header">
+<h1>Making EEG analysis inspectable</h1>
+<ul class="tags" aria-label="Keywords"><li>EEG</li><li>EEGLAB</li><li>ICA</li><li>Quality control</li></ul>
+<p class="status">Ongoing group research · preprocessing</p>
+</header>
+<figure class="project-hero"><img src="../assets/eeg.svg" alt="Synthetic EEG-like traces with a highlighted review window." width="600" height="400" decoding="async"><figcaption>Conceptual illustration · synthetic traces, not participant data.</figcaption></figure>
+<div class="project-body">
+<p class="question">How can an EEG preprocessing workflow make each quality-control decision clear and reviewable?</p>
+<p>Preprocessing choices determine which signals enter later analyses. Making the evidence and the reviewer’s decisions visible helps collaborators understand how an analysis input was produced, and revisit a decision when needed.</p>
+<p>The MATLAB / EEGLAB workflow covers signal preparation, ICA, and channel and epoch inspection. Automatic methods only flag candidates for review; a human reviewer makes and records the final decision.</p>
+<dl class="details"><div><dt>My role</dt><dd>Implementing preprocessing steps and quality-control reports; inspecting channels, independent components and epochs; maintaining documentation that links decisions to the workflow.</dd></div><div><dt>Methods</dt><dd>EEG · EEGLAB · ICA · manual quality control</dd></div><div><dt>Setting</dt><dd>Music and Language Development Research Group, ELTE</dd></div></dl>
+<p class="project-note">This page describes preprocessing work only; recordings and downstream findings are not reported.</p>
+</div>
+<nav class="project-bottom" aria-label="Project navigation"><a href="../research.html">All research</a><a href="cognitive-space.html">The geometry of cognition →</a></nav>
+</article>
+<footer class="page-footer"><span>© 2026 Zhe Jiang</span></footer>
+</main>
+</body>
+</html>
